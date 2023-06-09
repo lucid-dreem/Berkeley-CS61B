@@ -1,12 +1,20 @@
+import org.antlr.v4.runtime.tree.Tree;
+
 import java.util.List;
 import java.util.Map;
+import java.util.TreeMap;
 
 public class MapExercises {
     /** Returns a map from every lower case letter to the number corresponding to that letter, where 'a' is
      * 1, 'b' is 2, 'c' is 3, ..., 'z' is 26.
      */
     public static Map<Character, Integer> letterToNum() {
-        return null;
+        String alphabet = "abcdefghijklmnopqrstuvwxyz";
+        Map<Character, Integer> map = new TreeMap<>();
+        for (int i = 0; i < 26; i++){
+            map.put(alphabet.charAt(i), i + 1);
+        }
+        return map;
     }
 
     /** Returns a map from the integers in the list to their squares. For example, if the input list
