@@ -9,6 +9,9 @@ public class RandomChooser implements Chooser {
 
     public RandomChooser(int wordLength, String dictionaryFile) {
         // TODO: Fill in/change this constructor.
+        if (wordLength < 1) { throw new IllegalArgumentException("Length must be greater than 0"); }
+        else {
+        }
         chosenWord = "";
     }
 
