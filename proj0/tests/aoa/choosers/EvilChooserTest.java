@@ -25,7 +25,7 @@ public class EvilChooserTest {
     }
 
     @Order(2)
-    @DisplayName("EvilChooser executes test case from spec")
+    @DisplayName("EvilChooser executes test.txt case from spec")
     @Test
     public void testSpec() {
         // Tests the case that is detailed in the spec.
